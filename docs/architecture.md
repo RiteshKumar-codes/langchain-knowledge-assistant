@@ -27,3 +27,22 @@ User question -> Retriever -> Relevant document passages
 - Keep API keys out of source code.
 - Use environment variables for local configuration.
 - Validate uploaded documents before processing.
+
+
+## Day 4 — Prompt Templates
+
+- Prompt builder: ChatPromptTemplate
+- Message roles: system and human
+- Dynamic variables: level, topic
+- Prompt formatting: prompt.invoke(inputs)
+- Model execution: prompt | model
+- Response access: response.content
+
+### Updated Request Flow
+
+User input dictionary
+-> ChatPromptTemplate
+-> Formatted chat messages
+-> Gemini chat model
+-> Generated answer
+
