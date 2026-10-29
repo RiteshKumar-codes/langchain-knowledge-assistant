@@ -46,3 +46,19 @@ User input dictionary
 -> Gemini chat model
 -> Generated answer
 
+
+## Day 5 — Output Parsers
+
+### Plain-text flow
+Input -> ChatPromptTemplate -> Gemini
+-> StrOutputParser -> Python string
+
+### Structured JSON flow
+Input -> ChatPromptTemplate -> Gemini
+-> JsonOutputParser -> Python dictionary or list
+
+### Reliability
+- Treat model output as untrusted input.
+- Handle parsing failures.
+- Check required keys and value types.
+- Consider schema validation for stricter requirements.
